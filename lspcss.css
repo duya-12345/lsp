@@ -1,0 +1,166 @@
+/******全局CSS******/
+*{ margin:0; padding:0; font-family:"华文细黑"; }
+input{ outline:none; }
+input:focus{ border:1px #FF9999 solid; }
+ul,ol,li,dl,dt,dd{ list-style:none; }
+a{ text-decoration:none; }
+.sec_ani_ran:after,.sec_tes:after,.sec_nav:after,.sec_tes_h:after,.sec_ani__o:after,.sec_ani__o~div:after,
+.sec_ran_new:after,.sec_ran_end:after,.sec_ani__u:after{ content:''; display:block; clear:both; }
+/******全局CSS******/
+
+/******头部CSS******/
+/***背景图片***/
+.header{ width:100%; height:350px; background:url(images/A.png) -100px 0 no-repeat; background-size:110% 700px;}
+/***背景图片***/
+/***导航栏***/
+.hea_nav{ width:100%; height:60px; background:#FF9999; }
+#hea_nav img{ float:left; margin-top:6px; margin-left:80px; width:170px; height:50px; }
+.hea_nav ul,li{ float:left; margin-top:10px;  }
+.hea_nav li{ font-size:16px; margin-left:70px;  }
+.hea_nav li a{ color:#FFFFFF; }
+/***导航栏***/
+/***登录/注册***/
+.hea_nav form{ width:70px; height:30px; float:right; margin:15px 15px; border-radius:8px; overflow:hidden; }
+.hea_nav form input{ width:105%; height:104%; background:#FFFFFF; color:#FF9999; font-size:16px;
+    border:1px #FFFFFF solid; }
+#hea_nav_fo1{ margin-right:90px; }
+/***登录/注册****/
+/***搜索框***/
+.hea_form{ width:405px; margin:0 auto; }
+.hea_form input{ width:100%; height:38px; margin:150px auto 0; border-radius:10px; text-indent:5px;
+    font-size:17px; border:2px #FF9999 solid; }
+/**悬浮时导航栏变化**/
+.hea_nav li a:hover{ text-decoration:underline; }
+.hea_nav form:hover{ transform:scale(1.15); }
+/**悬浮时导航栏变化**/
+/******头部CSS******/
+
+/******主体CSS******/
+.sec_nav,.sec_tes,.sec_ani_ran{ margin:0 auto; padding:0; width:75%; }
+.sec_sli{ width:75%; height:400px; overflow:hidden; position:relative; border-radius:30px; margin:0 auto;
+    margin-top:20px; }/*轮播图  大盒子样式设置*/
+
+/***导航栏样式****/
+.sec_nav{ margin-top:10px; margin-bottom:-30px; }
+.sec_nav div,.sec_nav div a img{ float:left;  }
+.sec_nav div a img{ width:45px; height:45px; }
+.sec_nav div a p{ text-indent:8px; color:#FF9999; font-size:15px; }
+.sec_nav_one{ float:left; margin-right:35px; }
+.sec_nav_class{ margin-left:50px; }
+#sec_nav_nth{ float:right; }
+
+.sec_nav_state li{ font-size:17px; margin:23px 15px; }
+.sec_nav_state li a span{ font-size:9px; color:#FFFFFF; background:#0099FF; width:35px; height:17px;
+    margin-left:4px; border-radius:5px;  }
+.sec_nav_state li a,.sec_nav_class li a{ color:#FF9999; }
+.sec_nav_state li a:hover,.sec_nav_class li a:hover{ color:#0099FF; }
+.sec_nav_class li{ font-size:13px; margin:30px 10px; }
+/***导航栏样式****/
+/***轮播图样式****/
+.sec_sli_pic img{ width:100%; position:absolute; top:-20px; }
+.sec_sli_pic span{ color:#FFFFFF; font-size:23px; position:absolute; top:350px; left:38px; }
+.sec_sli_mbn{ width:90px; height:55px; position:absolute; overflow:hidden; border:2px #FFFFFF solid;
+    border-radius:10px; top:330px; }
+.sec_sli_mbn img{ width:100%; position:absolute; }
+.sec_sli div:nth-of-type(1){ right:460px; }
+.sec_sli div:nth-of-type(1) img{ width:150%; right:-18px; top:-5px; }
+.sec_sli div:nth-of-type(2){ right:350px; }
+.sec_sli div:nth-of-type(2) img{ width:140%; right:-17px; top:-20px; }
+.sec_sli div:nth-of-type(3){ right:240px; }
+.sec_sli div:nth-of-type(3) img{ width:110%; right:0; top:-5px; }
+.sec_sli div:nth-of-type(4){ right:130px; }
+.sec_sli div:nth-of-type(4) img{ width:170%; right:-35px; top:-4px; }
+.sec_sli div:nth-of-type(5){ right:20px; }
+.sec_sli div:nth-of-type(5) img{ width:150%; right:-20px; top:0; }
+.sec_sli_mbn:hover{ border:2px #FF9999 solid; }
+/***轮播图样式****/
+/***最近更新样式****/
+/*标题和更多*/
+.sec_tes{ border-bottom:1px rgba(204,204,204,0.2) solid; position:relative; margin-bottom:20px; box-sizing:border-box; }
+.sec_tes_h p{ color:#000; font-size:23px; float:left; line-height:55px; }
+.sec_tes_h a{ font-size:13px; color:#FF9999; padding:2px 25px 2px 10px; border-radius:6px; float:right;
+    margin-top:20px; background:url(images/JT1.png) 45px 5px no-repeat; background-size:9px;
+    border:1px #FF9999 solid;}
+.sec_tes_h a:hover{ color:#FFFFFF; background:#FF9999 url(images/JT2.png) 45px 5px no-repeat; background-size:8px; }
+/*具体动漫内容*/
+.sec_tes_h~div{ width:200px; height:80px; position:relative; margin-bottom:25px; }
+.sec_tes_h~div img{ width:80px; height:80px; float:left; margin-right:10px; }
+.sec_tes_h~div a{ color:#000; font-size:10px; }
+.sec_tes_h~div p{ position:absolute; bottom:4px; left:90px; color:#999999; font-size:12px; }
+.sec_tes_h~div p span{ color:#FFFFFF; background:#FF9999; margin-left:10px; padding:1px 10px; border-radius:10px; }
+.sec_tes_i{ float:left; margin-right:23px; }
+.sec_tes_j{ float:right; margin-left:23px; }
+.sec_tes_k{ float:left; margin:0 23px 0; }
+.sec_tes_h~div a:hover{ color:#0066CC; }
+.sec_tes>div:nth-of-type(13)~div{ display:none; }
+/*展开和收起*/
+#sec_tes_arr{ border-bottom:1px #CCCCCC solid; border-left:1px #CCCCCC solid; border-right:1px #CCCCCC solid;
+    width:85px; height:15px; border-radius:0 0 14px 14px; position:absolute; bottom:-21px; right:460px;
+    padding-bottom:4px; background:#FFFFFF; }
+#sec_tes_arr a{ font-size:10px; color:#CCCCCC; position:absolute; top:0; right:40px; }
+#sec_tes_arr img{ width:17px; height:17px; position:absolute; right:20px; bottom:3px; }
+/***最近更新样式****/
+/***动漫推荐和排行***/
+.sec_ani{ width:70%; float:left; box-sizing:border-box; }
+.sec_ran{ width:28%; float:right; }
+.sec_ani_japan,.sec_ani_china,.sec_ani_movie{ width:100%; }
+
+/*标题和更多*/
+.sec_ani__o p{ color:#000; font-size:23px; float:left; line-height:60px; }
+.sec_ani__o a{ font-size:12px; color:#666666; padding:2px; border-radius:5px; float:right;
+    margin-top:25px; width:65px; text-indent:13px; background:url(images/JT3.png) 50px 5px no-repeat;
+    border:1px #666666 solid; background-size:10px 10px; }
+.sec_ani__o a:hover{ text-indent:9px; background:#D7D7D7 url(images/JT4.png) 52px 5px no-repeat;
+    background-size:10px 10px; }
+/*标题和更多*/
+/*动漫    设定具体到每一个盒子内样式*/
+.sec_ani__o~div{ width:22%; height:260px; padding:6px; margin-bottom:10px; border-radius:15px; }
+.sec_ani__o~div img{ width:100%; height:220px; border-radius:5px; }
+.sec_ani__o~div p{ font-size:13px; }
+.sec_ani__o~div a{ text-decoration:none; color:#000; line-height:22px; }
+.sec_ani__o~div span{ color:#FFFFFF; background:#FF9999; padding:1px 10px; font-size:9px; border-radius:10px; }
+.sec_ani__p{ float:left; }
+.sec_ani__q{ float:right; }
+.sec_ani__r{ float:left; margin:0 6px; }
+/*.sec_ani__o~div:hover{ box-shadow:0 5px 5px rgba(0,0,0,0.1),0 0 10px 0 rgba(0,0,0,0.2); }*/
+#sec_ani_movie .sec_ani__o~div{ height:295px; }
+.sec_ani__o~div a:hover{ color:#0099FF; }
+
+/*排行   设定具体到每一个盒子内样式*/
+.sec_ani__u p{ color:#000; font-size:17px; float:left; line-height:55px; }
+.sec_ani__u a{ font-size:10px; color:#666666; padding:2px; border-radius:5px; float:right;
+    margin-top:15px; width:55px; text-indent:8px; background:url(images/JT3.png) 44px 5px no-repeat;
+    border:1px #666666 solid; background-size:10px 10px; }
+.sec_ani__u a:hover{ text-indent:6px; background:#D7D7D7 url(images/JT4.png) 48px 5px no-repeat;
+    background-size:10px 10px; }
+.sec_ran li{ width:100%; position:relative; }
+.sec_ran li a{ color:#000; font-size:12px; }
+.sec_ran li a span{ color:#FFFFFF; padding:1px 7px; font-weight:bold; font-size:9px; background:#999999;
+    border-radius:5px; margin-right:5px; float:left; }
+.sec_ran li a p{ color:#999999; font-size:11px; position:absolute; bottom:3px; left:125px; }
+.sec_ran li a img{ width:90px; height:55px; border-radius:7px; float:left; margin-right:5px; }
+.sec_ran li a:hover{ color:#0099FF; }
+.sec_ran li[class] span{ background:#FF9999; }
+.sec_ran li[class=a]~li{ margin-top:23px; }
+.sec_ani__v{ width:100%; height:30px; float:left; margin-top:25px;  border-radius:6px; border:1px #D7D7D7 solid;
+    background:#D7D7D7 url(images/JT4.png) 155px 9px no-repeat; background-size:12px 12px; }
+.sec_ani__v a{ margin-left:90px; line-height:30px; color:#000; font-size:13px; }
+.sec_ani__v:hover{ background:#999999 url(images/JT5.png) 155px 9px no-repeat; background-size:11px 11px; }
+#sec_ran_end{ margin-top:80px; }
+/**动漫推荐和排行**/
+/******主体CSS******/
+
+/******页脚CSS******/
+.dofa{ width:100%; height:50px; margin-top:20px; border-top:2px #FF9999 solid; }
+.dofa p{ text-align:center; color:#FF9999; font-size:15px; }
+/******页脚CSS******/
+
+/******固定定位CSS******/
+.backtrack{ width:55px; height:55px; position:fixed; bottom:50px; right:100px; border-radius:10px; }
+.backtrack img{ width:100%; height:100%; }
+@keyframes spread{ 100%{} }
+/******固定定位CSS******/
+
+/******js应用CSS******/
+.xuanimg{ transform:rotate(180deg); }
+/******js应用CSS******/

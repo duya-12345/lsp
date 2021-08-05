@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>lsp动漫网</title>
+    <link rel="stylesheet" href="lspcss.css" type="text/css" />
+</head>
+<body>
+<header id="header" class="header">
+    <a name="head" id="head"></a>
+    <nav class="hea_nav" id="hea_nav">
+        <img src="images/logo.png" alt="logo"/>
+        <ul>
+            <li><a href="lsp.html">首页</a></li>
+            <li><a href="Cartoon/lspCartoon.html">番剧</a></li>
+            <li><a href="Caricature/lspCaricature.html">漫画</a></li>
+            <li><a href="Homepage/lspHomepage.html">消息</a></li>
+            <li><a href="Homepage/lspHomepage.html">收藏</a></li>
+            <li><a href="Homepage/lspHomepage.html">历史</a></li>
+        </ul>
+        <form method="get" action="Enroll/lspEnroll2.html" class="hea_nav_fo1" id="hea_nav_fo1">
+            <input type="submit" value="登录" name="denlu" id="hea_nav_fo1sub"/>
+        </form>
+        <form method="get" action="Enroll/lspEnroll1.html" class="hea_nav_fo2" id="hea_nav_fo2">
+            <input type="submit" value="注册" name="zhuce" id="hea_nav_fo2sub"/>
+        </form>
+    </nav>
+    <form class="hea_form" id="hea_form">
+        <input type="search" name="search" placeholder="请输入要搜索的关键字" />
+    </form>
+</header>
+<section id="section" class="section">
+    <!--导航栏-->
+    <nav class="sec_nav" id="sec_nav">
+        <div class="sec_nav_one" id="sec_nav_one">
+            <a href="lsp.html"><img src="images/sou1.png" /><p>首页</p></a>
+        </div>
+        <div class="sec_nav_state" id="sec_nav_state">
+            <ul>
+                <li><a href="#sec_ani_film">动漫电影<span>595</span></a></li>
+                <li><a href="#sec_ani_japanese">日本动漫<span>857</span></a></li>
+                <li><a href="#sec_ani_chinese">国产动漫<span>495</span></a></li>
+            </ul>
+        </div>
+        <div class="sec_nav_class" id="sec_nav_class">
+            <ul>
+                <li><a href="Cartoon/lspCartoon.html">剧场版</a></li>
+                <li><a href="Cartoon/lspCartoon.html">OVA版</a></li>
+                <li><a href="Cartoon/lspCartoon.html">真人版</a></li>
+                <li><a href="Cartoon/lspCartoon.html">宣传版</a></li>
+                <li><a href="Cartoon/lspCartoon.html">特典版</a></li>
+                <li><a href="Cartoon/lspCartoon.html">T V版</a></li>
+            </ul>
+        </div>
+        <div class="sec_nav_nth" id="sec_nav_nth">
+            <a href="#Ranking"><img src="images/sou2.png" /><p>排行</p></a>
+        </div>
+    </nav>
+    <!--轮播图-->
+    <section class="sec_sli" id="sec_sli">
+        <a href="#" class="sec_sli_pic" id="sec_sli_pic">
+            <img src="images/TJ1.png" alt="轮播图"/><span>鬼灭之刃</span></a>
+        <div class="sec_sli_mbn" id="sec_sli_mbn1" onclick="slideshow1(0)" onmouseover="slideshow1(0)">
+            <a href="#"><img src="images/TJ1_1.jpg" alt="鬼灭之刃"/></a>
+        </div>
+        <div class="sec_sli_mbn" id="sec_sli_mbn2" onclick="slideshow1(1)" onmouseover="slideshow1(1)">
+            <a href="#"><img src="images/TJ2_1.jpg" alt="辉夜大小姐想让我告白"/></a>
+        </div>
+        <div class="sec_sli_mbn" id="sec_sli_mbn3" onclick="slideshow1(2)" onmouseover="slideshow1(2)">
+            <a href="#"><img src="images/TJ3_1.png" alt="某科学的超电磁炮"/></a>
+        </div>
+        <div class="sec_sli_mbn" id="sec_sli_mbn4" onclick="slideshow1(3)" onmouseover="slideshow1(3)">
+            <a href="#"><img src="images/TJ4_1.png" alt="Fate"/></a>
+        </div>
+        <div class="sec_sli_mbn" id="sec_sli_mbn5" onclick="slideshow1(4)" onmouseover="slideshow1(4)">
+            <a href="#"><img src="images/TJ5_1.jpg" alt="刀剑神域"/></a>
+        </div>
+    </section>
+    <!--最近更新-->
+    <section class="sec_tes" id="sec_tes">
+        <div class="sec_tes_h"><p>最近更新</p><a href="Cartoon/lspCartoon.html">更多</a></div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX1.png" alt="a"/><span>在魔王城说晚安</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX2.png" alt=""/><span>黑色四叶草</span></a>
+            <p>更新至<span>153话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX3.png" alt=""/><span>影之诗</span></a>
+            <p>更新至<span>32话</span></p>
+        </div>
+        <div class="sec_tes_j">
+            <a href="#"><img src="images/GX4.png" alt=""/><span>阿松 第三季</span></a>
+            <p>更新至<span>7话</span></p>
+        </div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX5.png" alt="a"/><span>黄金神威 第三季</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX6.png" alt=""/><span>被神捡到的男人</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX7.png" alt=""/><span>无能力者娜娜</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_j">
+            <a href="#"><img src="images/GX8.png" alt=""/><span>攀岩少女</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX9.png" alt="a"/><span>成神之日</span></a>
+            <p>更新至<span>7话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX10.png" alt=""/><span>咒术回战</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX11.png" alt=""/><span>总之就是非常可爱</span></a>
+            <p>更新至<span>8话</span></p>
+        </div>
+        <div class="sec_tes_j">
+            <a href="#"><img src="images/GX12.png" alt=""/><span>名侦探柯南</span></a>
+            <p>更新至<span>1045话</span></p>
+        </div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX13.png" alt=""/><span>请问您今天要来点兔子吗？BLOOM</span></a>
+            <p>更新至<span>11话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX14.png" alt=""/><span>战翼的希格德莉法</span></a>
+            <p>更新至<span>11话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX15.png" alt=""/><span>我立于百万生命之上</span></a>
+            <p>更新至<span>12话</span></p>
+        </div>
+        <div class="sec_tes_j">
+            <a href="#"><img src="images/GX16.png" alt=""/><span>魔女之旅</span></a>
+            <p>更新至<span>12话</span></p>
+        </div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX17.png" alt="a"/><span>突击莉莉 BOUQUET</span></a>
+            <p>更新至<span>11话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX18.png" alt=""/><span>放学后海堤日记</span></a>
+            <p>更新至<span>12话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX19.png" alt=""/><span>水果篮子 第二季</span></a>
+            <p>更新至<span>25话</span></p>
+        </div>
+        <div class="sec_tes_j">
+            <a href="#"><img src="images/GX20.png" alt=""/><span>喜欢本大爷的竟然就你一个？</span></a>
+            <p>更新至<span>13话</span></p>
+        </div>
+        <div class="sec_tes_i">
+            <a href="#"><img src="images/GX21.png" alt="a"/><span>非枪人生 第二季</span></a>
+            <p>更新至<span>24话</span></p>
+        </div>
+        <div class="sec_tes_k">
+            <a href="#"><img src="images/GX22.png" alt=""/><span>熊熊勇闯异世界</span></a>
+            <p>更新至<span>12话</span></p>
+        </div>
+        <section id="sec_tes_arr" class="sec_tes_arr"><a href="#">全部</a><img src="images/JT6.png"/></section>
+    </section>
+    <!--动漫推荐和排行-->
+    <section class="sec_ani_ran" id="sec_ani_ran">
+        <div class="sec_ani" id="sec_ani">
+            <div class="sec_ani_japan" id="sec_ani_japan">
+                <div class="sec_ani__o"><p>日本动漫</p><a name="sec_ani_japanese" href="Cartoon/lspCartoon.html">更多</a></div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/RB1.jpg" alt=""/><p>鬼灭之刃</p></a>
+                    <span>全24话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/RB2.jpg" alt=""/><p>刀剑神域</p></a>
+                    <span>全24话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/RB3.jpg" alt=""/><p>某科学的超电磁炮</p></a>
+                    <span>全25话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/RB4.jpg" alt=""/><p>干物妹！小埋</p></a>
+                    <span>全12话</span>
+                </div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/RB5.jpg" alt=""/><p>工作细胞</p></a>
+                    <span>全14话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/RB6.jpg" alt=""/><p>小林家的龙女仆</p></a>
+                    <span>全14话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/RB7.jpg" alt=""/><p>Re:从零开始的异世界生活</p></a>
+                    <span>全25话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/RB8.jpg" alt=""/><p>辉夜大小姐想让我告白</p></a>
+                    <span>全12话</span>
+                </div>
+            </div>
+            <div class="sec_ani_china" id="sec_ani_china">
+                <div class="sec_ani__o"><p>国产动漫</p><a name="sec_ani_chinese" href="Cartoon/lspCartoon.html">更多</a></div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/GC1.jpg" alt=""/><p>灵笼</p></a>
+                    <span>全12话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/GC2.jpg" alt=""/><p>刺客伍六七</p></a>
+                    <span>全14话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/GC3.jpg" alt=""/><p>镇魂街</p></a>
+                    <span>全24话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/GC4.jpg" alt=""/><p>非人哉</p></a>
+                    <span>全48话</span>
+                </div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/GC5.webp" alt=""/><p>风灵玉秀</p></a>
+                    <span>全4话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/GC6.jpg" alt=""/><p>我的三体 章北海传</p></a>
+                    <span>全9话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/GC7.jpg" alt=""/><p>雾山五行</p></a>
+                    <span>全3话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/GC8.jpg" alt=""/><p>一人之下</p></a>
+                    <span>全24话</span>
+                </div>
+            </div>
+            <div class="sec_ani_movie" id="sec_ani_movie">
+                <div class="sec_ani__o"><p>动漫电影</p><a name="sec_ani_film" href="Cartoon/lspCartoon.html">更多</a></div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/DY1.jpg" alt=""/><p>朝花夕誓</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/DY2.jpg" alt=""/><p>游戏人生 零</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/DY3.jpg" alt=""/><p>命运之夜——天之杯||：迷失之碟</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/DY4.jpg" alt=""/><p>风语咒</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__p">
+                    <a href="#"><img src="images/DY5.jpeg" alt=""/><p>声之形</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/DY6.jpg" alt=""/><p>天气之子</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__r">
+                    <a href="#"><img src="images/DY7.jpg" alt=""/><p>名侦探柯南：贝克尔街的亡灵</p></a>
+                    <span>全1话</span>
+                </div>
+                <div class="sec_ani__q">
+                    <a href="#"><img src="images/DY8.webp" alt=""/><p>罗小黑战记</p></a>
+                    <span>全1话</span>
+                </div>
+            </div>
+        </div>
+        <div class="sec_ran" id="sec_ran">
+            <div class="sec_ran_new" id="sec_ran_new" >
+                <div class="sec_ani__u"><p>热门：最新</p><a name="Ranking" href="#">一周</a></div>
+                <ul>
+                    <li class=""><a href="#"><span>1</span><img src="images/LM1.jpg" alt=""/>
+                        【OAD】关于我转生...<p>综合评分：9.4</p></a></li>
+                    <li class="b"><a href="#"><span>2</span><img src="images/LM2.jpg" alt=""/>
+                        【10月】咒术回战 09<p>综合评分：9.8</p></a></li>
+                    <li class="a"><a href="#"><span>3</span><img src="images/LM3.jpg" alt=""/>
+                        【10月】全员恶玉 08<p>综合评分：9.3</p></a></li>
+                    <li><a href="#"><span>4</span><div>【10月】总之就是非常可爱 09</div></a></li>
+                    <li><a href="#"><span>5</span><div>【10月】熊熊勇闯异世界 08</div></a></li>
+                    <li><a href="#"><span>6</span><div>【10月】魔女之旅 09</div></a></li>
+                    <li><a href="#"><span>7</span><div>【10月】我立于百万生命之上 09</div></a></li>
+                    <li><a href="#"><span>8</span><div>【7月】炎炎消防队 贰之章 22</div></a></li>
+                    <li><a href="#"><span>9</span><div>【10月】总之就是非常可爱 09</div></a></li>
+                </ul>
+                <div class="sec_ani__v"><a href="Cartoon/lspCartoon.html">查看更多</a></div>
+            </div>
+            <div class="sec_ran_end" id="sec_ran_end">
+                <div class="sec_ani__u"><p>热门：完结</p><a href="#">一周</a></div>
+                <ul>
+                    <li class="b"><a href="#"><span>1</span><img src="images/TJ1_1.jpg" alt=""/>
+                        鬼灭之刃<p>综合评分：9.8</p></a></li>
+                    <li class=""><a href="#"><span>2</span><img src="images/LM_WJ2.jpeg" alt=""/>
+                        干物妹！小埋<p>综合评分：9.2</p></a></li>
+                    <li class="a"><a href="#"><span>3</span><img src="images/LM_WJ3.jpg" alt=""/>
+                        小林家的龙女仆<p>综合评分：9.6</p></a></li>
+                    <li><a href="#"><span>4</span><img src="images/LM_WJ4.jpeg" alt=""/>
+                        JOJO的奇妙冒险 黄金之风<p>综合评分：9.8</p></a></li>
+                    <li><a href="#"><span>5</span><img src="images/LM_WJ5.jpg" alt=""/>
+                        OVERLORD Ⅲ<p>综合评分：9.4</p></a></li>
+                    <li><a href="#"><span>6</span><img src="images/LM_WJ6.jpeg" alt=""/>
+                        宇崎学妹想要玩！<p>综合评分：9.4</p></a></li>
+                    <li><a href="#"><span>7</span><img src="images/LM_WJ7.jpg" alt=""/>
+                        Re:从零开始的异世界生活<p>综合评分：9.2</p></a></li>
+                    <li><a href="#"><span>8</span><img src="images/LM_WJ8.jpeg" alt=""/>
+                        工作细胞<p>综合评分：9.6</p></a></li>
+                    <li><a href="#"><span>9</span><img src="images/TJ2_1.jpg" alt=""/>
+                        辉夜大小姐想让我告白<p>综合评分：9.9</p></a></li>
+                    <li><a href="#"><span>10</span><img src="images/LM_WJ10.jpg" alt=""/>
+                        刀剑神域 爱丽丝篇 异界战争 -终章-<p>综合评分：4.8</p></a></li>
+                    <li><a href="#"><span>11</span><img src="images/LM_WJ11.jpeg" alt=""/>
+                        紫罗兰永恒花园<p>综合评分：9.9</p></a></li>
+                </ul>
+                <div class="sec_ani__v"><a href="Cartoon/lspCartoon.html">查看更多</a></div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer id="footer" class="footer">
+    <div class="dofa">
+        <p>这是我做的第一个网页 &nbsp;&nbsp;&copy;渡鸦12345</p>
+    </div>
+
+</footer>
+<!--锚链接-->
+<div class="backtrack" id="backtrack"><a href="javascript:void(0);"><img src="images/GD1.png"/></a></div>
+
+<script src="jQuery/jquery.min.js" type="text/javascript"></script>
+<script src="lspjs.js" type="text/javascript"></script>
+</body>
+</html>
