@@ -1,0 +1,120 @@
+/******全局CSS******/
+*{ margin:0; padding:0; font-family:"华文细黑"; }
+input{ outline:none; }
+input:focus{ border:1px #0099FF solid; }
+ul,ol,li,dl,dt,dd{ list-style:none; }
+a{ text-decoration:none; color:#000; }
+.sec_screen:after{ content:''; display:block; clear:both; }
+/******全局CSS******/
+
+/******头部CSS******/
+.header{ position:relative; }
+/***导航栏***/
+.hea_nav{ width:100%; height:60px; background:#FF9999;  }
+.hea_nav img{ float:left; margin-top:6px; margin-left:65px; width:170px; height:50px; }
+.hea_nav ul,.hea_nav li{ float:left; margin-top:10px;  }
+.hea_nav li{ font-size:16px; margin-left:30px;  }
+.hea_nav li a{ color:#FFFFFF; }
+/***导航栏***/
+/***登录/注册***/
+.hea_nav_fo{ width:70px; height:30px; margin:15px 15px; border-radius:8px; overflow:hidden; }
+.hea_nav_fo input{ width:105%; height:104%; background:#FFFFFF; color:#FF9999; font-size:16px;
+    border:1px #FFFFFF solid; }
+#hea_nav_fo1{ position:absolute; top:1px; right:50px; }
+#hea_nav_fo2{ position:absolute; top:1px; right:140px; }
+/***登录/注册****/
+/***搜索框***/
+#hea_form{ position:absolute; top:13px; right:270px; }
+#hea_form input{ width:350px; height:35px; border-radius:5px; font-size:15px; color:#000; text-indent:5px;
+    border:1px #CCCCCC solid; }
+/**悬浮时导航栏变化**/
+.hea_nav li a:hover{ text-decoration:underline; }
+#hea_nav_fo1:hover,#hea_nav_fo2:hover{ transform:scale(1.15); }
+/**悬浮时导航栏变化**/
+/******头部CSS******/
+
+/******主体CSS******/
+.section{ width:100%; height:800px; padding:70px 0 20px; background:url(images/bg1.jfif) 0 0 no-repeat;
+    background-size:100% 940px; }
+.section form{ width:75%; margin:0 auto 50px; position:relative;  padding-top:65px; border-radius:10px;
+    background:rgba(255,255,255,0.25); }
+.section form h1{ font-size:31px; font-weight:normal; width:100px; text-indent:20px; background:rgba(255,255,255,0);
+    position:absolute; top:-20px; left:44.5%; }
+.sec_log_right,.sec_log_left{ width:43%; border-top:1px #999999 solid; position:absolute; top:0; }
+.sec_log_right{ right:5px; }
+.sec_log_left{ left:5px; }
+.sec_log_f{ margin:0 auto; width:800px; height:500px; position:relative;  }
+.sec_log_f>li[class],.sec_log_f>li[id]{ width:40%; height:35px; font-size:17px; margin:0 auto 30px;
+    position:relative;  }
+
+
+.sec_log_f>li[class] input[class=inputs]{ width:100%; height:100%; border:1px #CCCCCC solid; text-indent:10px;
+    border-radius:5px; }
+.sec_log_f>li[class] input[placeholder]:focus{ border:1px #0099FF solid; }
+/*注册*/
+.sec_login_ul_3>#readonly{ width:33%; height:100%; border-radius:5px 0 0 5px; border:1px #CCCCCC solid;
+    color:#CCCCCC; float:left; text-indent:1em; cursor:pointer; }
+.sec_login_ul_3>img{ width:16px; height:11px; position:absolute; top:11px; left:80px; }
+.sec_login_ul_3>#cell{ width:67%; height:100%; border-radius:0 5px 5px 0; border:1px #CCCCCC solid;
+    text-indent:1.5em; position:absolute; }
+.sec_login_ul_3>#cell:focus{ border:1px #0099FF solid; }
+.sec_login_ul_3>ul{ width:105px; position:absolute; top:-196px; border-radius:5px; background:#FFFFFF;
+    padding-top:2px; border:1px #CCCCCC solid; display:none; cursor:pointer; }
+.sec_login_ul_3>ul li{ padding:7px 5px 7px 10px; }
+.sec_login_ul_3>ul li:hover{ background:rgba(204,204,204,0.2); }
+.sec_login_ul_3>ul li>div{ width:90px; text-overflow:ellipsis; overflow: hidden; white-space:nowrap;
+    font-size:13px; color:#CCCCCC; }
+.sec_login_ul_4>.button{ position:absolute; top:2px; right:1px; width:30%; height:95%; color:#FFFFFF;
+    background:#0099FF; border:1px #0099FF solid; border-radius:5px; }
+#sec_login_ul_5{ height:18px; margin:-25px auto 5px; }
+#sec_login_ul_5>span{ font-size:10px; float:right; margin-right:215px; margin-top:4px; }
+.sec_login_ul_6>input{ width:100%; height:100%; }
+.sec_login_ul>li[class=sec_login_ul_7]{ margin-top:-20px; }
+.sec_login_ul_7>a{ color:#0099FF; font-size:9px; float:right; }
+/*出错提示框*/
+.sec_log_f>li[id*=Div]{ position:absolute; font-size:13px; color:red; height:15px; left:575px; }
+.sec_log_f>li[id=Divname]{ top:8px; }
+.sec_log_f>li[id=Divpwd]{ top:72px; }
+.sec_log_f>li[id=Divcell]{ top:137px; }
+.sec_log_f>li[id=Divauth]{ top:203px; }
+
+/*登录*/
+#sec_enroll_ul_0{ margin-bottom:10px; height:20px; }
+#psaa_tosubmit{ font-size:13px; color:#0099FF; margin-right:15px; }
+#note_tosubmit{ font-size:13px; color:#000000; }
+.sec_enroll_ul_3>#toreadonly{ width:33%; height:100%; border-radius:5px 0 0 5px; border:1px #CCCCCC solid;
+    color:#CCCCCC; float:left; text-indent:1em; cursor:pointer; }
+.sec_enroll_ul_3>img{ width:16px; height:11px; position:absolute; top:11px; left:80px; }
+.sec_enroll_ul_3>#tocell{ width:67%; height:100%; border-radius:0 5px 5px 0; border:1px #CCCCCC solid;
+    text-indent:1.5em; position:absolute; }
+.sec_enroll_ul_3>#cell:focus{ border:1px #0099FF solid; }
+.sec_enroll_ul_3>ul{ width:105px; position:absolute; top:-196px; border-radius:5px; background:#FFFFFF;
+    padding-top:2px; border:1px #CCCCCC solid; display:none; cursor:pointer; }
+.sec_enroll_ul_3>ul li{ padding:7px 5px 7px 10px; }
+.sec_enroll_ul_3>ul li:hover{ background:rgba(204,204,204,0.2); }
+.sec_enroll_ul_3>ul li>div{ width:90px; text-overflow:ellipsis; overflow: hidden; white-space:nowrap;
+    font-size:13px; color:#CCCCCC; }
+.sec_enroll_ul_4>.button{ position:absolute; top:2px; right:1px; width:30%; height:95%; color:#FFFFFF;
+    background:#0099FF; border:1px #0099FF solid; border-radius:5px; }
+.sec_enroll_ul_5>#tosubmit{ height:100%; width:140px; float:left; background:#0099FF; color:#FFFFFF;
+    border-radius:4px; border:1px #0565C6 solid; }
+.sec_enroll_ul_5>#register p{ font-size:14px; color:#666666; width:140px; height:100%; float:right;
+    border-radius:4px; text-align:center; line-height:35px; border:1px #999999 solid; }
+/*出错提示框,和隐藏*/
+.sec_enroll_ul_3,.sec_enroll_ul_4{ display:none; }
+.sec_log_f>li[id*=sec_enroll_ul_o]{ position:absolute; font-size:13px; color:red; height:15px; left:575px; }
+.sec_log_f>li[id=sec_enroll_ul_o1]{ top:40px; }
+.sec_log_f>li[id=sec_enroll_ul_o2]{ top:103px; }
+/******主体CSS******/
+
+/******页脚CSS******/
+.dofa{ width:100%; height:25px; border-top:2px #FF9999 solid; }
+.dofa p{ text-align:center; color:#FF9999;  }
+/******页脚CSS******/
+
+/******js应用CSS******/
+.rotate1{ transition:all 0.3s ease-in-out; transform:rotate(180deg); }
+.rotate2{ transition:all 0.3s ease-in-out; transform:rotate(0deg); }
+.submitbg{ background:#0099FF; border:1px #0099FF solid; color:#FFFFFF; border-radius:5px; }
+
+/******js应用CSS******/

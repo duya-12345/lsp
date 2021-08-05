@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>lsp动漫网—番剧</title>
+    <link rel="stylesheet" href="lspCartooncss.css" type="text/css"/>
+</head>
+<body>
+<header id="header" class="header">
+    <nav class="hea_nav" id="hea_nav">
+        <img src="images/alogo.png" alt="logo"/>
+        <ul>
+            <li><a href="../lsp.html">首页</a></li>
+            <li><a href="../Cartoon/lspCartoon.html">番剧</a></li>
+            <li><a href="../Caricature/lspCaricature.html">漫画</a></li>
+            <li><a href="../Homepage/lspHomepage.html">消息</a></li>
+            <li><a href="../Homepage/lspHomepage.html">收藏</a></li>
+            <li><a href="../Homepage/lspHomepage.html">历史</a></li>
+        </ul>
+        <form method="get" action="../Enroll/lspEnroll2.html" class="hea_nav_fo1" id="hea_nav_fo1">
+            <input type="submit" value="登录" name="denlu" id="hea_nav_fo1sub"/>
+        </form>
+        <form method="get" action="../Enroll/lspEnroll1.html" class="hea_nav_fo2" id="hea_nav_fo2">
+            <input type="submit" value="注册" name="zhuce" id="hea_nav_fo2sub"/>
+        </form>
+    </nav>
+    <form class="hea_form" id="hea_form">
+        <input type="search" name="search" placeholder="请输入要搜索的关键字" />
+    </form>
+</header>
+<section id="section" class="section">
+    <a name="head" id="head"></a>
+    <!--类型(!)：全部(!),正片(!b),电影(!c),其他(!d)-->
+    <!--地区(@)：全部(@),日本(@b),中国(@c),其他(@d)-->
+    <!--时间(%)：全部(%),2021(%b),2020(%c),2019(%d),2018(%e),2017(%f),2016(%g),2015(%h),2014-2010(%i)-->
+    <!--风格(&)：全部(&),原创(&b),漫画改(&c),小说改(&d),游戏改(&e),布袋戏(&f),热血(&g),穿越(&h),奇幻(&i),战斗(&j),
+        搞笑(&k),日常(&l),科幻(&m),萌系(&n),治愈(&o),校园(&p),少儿(&q),泡面(&r),恋爱(&s),少女(&t),魔法(&u)冒险(&v),
+        历史(&w),架空(&x),机战(&y),神魔(&z),声控(&0),运动(&1),励志(&2),音乐(&3)推理(&4),社团(&5),智斗(&6),催泪(&7),
+        美食(&8),偶像(&9),乙女(&*),职场(&**)--38个分类-->
+    <section id="sec_filtrate" class="sec_filtrate" >
+        <table class="sec_fil_table" id="sec_fil_table">
+            <tr><th rowspan="5"><p>筛选:</p></th></tr>
+            <tr class="!">
+                <td><p>类型:</p></td>
+                <td><ul><li onclick='display("!")'><a href="javascript:void(0);" name="!">全部</a></li>
+                    <li onclick='display("!b")'><a href="javascript:void(0);" name="!b">正片</a></li>
+                    <li onclick="display('!c')"><a href="javascript:void(0);" name="!c">电影</a></li>
+                    <li onclick="display('!d')"><a href="javascript:void(0);" name="!d">其他</a></li></ul></td>
+            </tr>
+            <tr class="@">
+                <td><p>地区:</p></td>
+                <td><ul><li onclick="display('@')"><a href="javascript:void(0);" name="@">全部</a></li>
+                    <li onclick="display('@b')"><a href="javascript:void(0);" name="@b">日本</a></li>
+                    <li onclick="display('@c')"><a href="javascript:void(0);" name="@c">中国</a></li>
+                    <li onclick="display('@d')"><a href="javascript:void(0);" name="@d">其他</a></li></ul></td>
+            </tr>
+            <tr class="%">
+                <td><p>时间:</p></td>
+                <td><ul><li onclick="display('%')"><a href="javascript:void(0);" name="%">全部</a></li>
+                    <li onclick="display('%b')"><a href="javascript:void(0);" name="%b">2021</a></li>
+                    <li onclick="display('%c')"><a href="javascript:void(0);" name="%c">2020</a></li>
+                    <li onclick="display('%d')"><a href="javascript:void(0);" name="%d">2019</a></li>
+                    <li onclick="display('%e')"><a href="javascript:void(0);" name="%e">2018</a></li>
+                    <li onclick="display('%f')"><a href="javascript:void(0);" name="%f">2017</a></li>
+                    <li onclick="display('%g')"><a href="javascript:void(0);" name="%g">2016</a></li>
+                    <li onclick="display('%h')"><a href="javascript:void(0);" name="%h">2015</a></li>
+                    <li onclick="display('%i')"><a href="javascript:void(0);" name="%i">2014-2010</a></li>
+                </ul></td>
+            </tr>
+            <tr class="&">
+                <td><p>风格:</p></td>
+                <td><ul>
+                    <li onclick="display('&')"><a href="javascript:void(0);" name="&">全部</a></li>
+                    <li onclick="display('&b')"><a href="javascript:void(0);" name="&b">原创</a></li>
+                    <li onclick="display('&c')"><a href="javascript:void(0);" name="&c">漫画改</a></li>
+                    <li onclick="display('&d')"><a href="javascript:void(0);" name="&d">小说改</a></li>
+                    <li onclick="display('&e')"><a href="javascript:void(0);" name="&e">游戏改</a></li>
+                    <li onclick="display('&f')"><a href="javascript:void(0);" name="&f">布袋戏</a></li>
+                    <li onclick="display('&g')"><a href="javascript:void(0);" name="&g">热血</a></li>
+                    <li onclick="display('&h')"><a href="javascript:void(0);" name="&h">穿越</a></li>
+                    <li onclick="display('&i')"><a href="javascript:void(0);" name="&i">奇幻</a></li>
+                    <li onclick="display('&j')"><a href="javascript:void(0);" name="&j">战斗</a></li>
+                    <li onclick="display('&k')"><a href="javascript:void(0);" name="&k">搞笑</a></li>
+                    <li onclick="display('&l')"><a href="javascript:void(0);" name="&l">日常</a></li>
+                    <li onclick="display('&m')"><a href="javascript:void(0);" name="&m">科幻</a></li>
+                    <li onclick="display('&n')"><a href="javascript:void(0);" name="&n">萌系</a></li>
+                    <li onclick="display('&o')"><a href="javascript:void(0);" name="&o">治愈</a></li>
+                    <li onclick="display('&p')"><a href="javascript:void(0);" name="&p">校园</a></li>
+                    <li onclick="display('&q')"><a href="javascript:void(0);" name="&q">少儿</a></li>
+                    <li onclick="display('&r')"><a href="javascript:void(0);" name="&r">泡面</a></li>
+                    <li onclick="display('&s')"><a href="javascript:void(0);" name="&s">恋爱</a></li>
+                    <li onclick="display('&t')"><a href="javascript:void(0);" name="&t">少女</a></li>
+                    <li onclick="display('&u')"><a href="javascript:void(0);" name="&u">魔法</a></li>
+                    <li onclick="display('&v')"><a href="javascript:void(0);" name="&v">冒险</a></li>
+                    <li onclick="display('&w')"><a href="javascript:void(0);" name="&w">历史</a></li>
+                    <li onclick="display('&x')"><a href="javascript:void(0);" name="&x">架空</a></li>
+                    <li onclick="display('&y')"><a href="javascript:void(0);" name="&y">机战</a></li>
+                    <li onclick="display('&z')"><a href="javascript:void(0);" name="&z">神魔</a></li>
+                    <li onclick="display('&0')"><a href="javascript:void(0);" name="&0">声控</a></li>
+                    <li onclick="display('&1')"><a href="javascript:void(0);" name="&1">运动</a></li>
+                    <li onclick="display('&2')"><a href="javascript:void(0);" name="&2">励志</a></li>
+                    <li onclick="display('&3')"><a href="javascript:void(0);" name="&3">音乐</a></li>
+                    <li onclick="display('&4')"><a href="javascript:void(0);" name="&4">推理</a></li>
+                    <li onclick="display('&5')"><a href="javascript:void(0);" name="&5">社团</a></li>
+                    <li onclick="display('&6')"><a href="javascript:void(0);" name="&6">智斗</a></li>
+                    <li onclick="display('&7')"><a href="javascript:void(0);" name="&7">催泪</a></li>
+                    <li onclick="display('&8')"><a href="javascript:void(0);" name="&8">美食</a></li>
+                    <li onclick="display('&9')"><a href="javascript:void(0);" name="&9">偶像</a></li>
+                    <li onclick="display('&*')"><a href="javascript:void(0);" name="&*">乙女</a></li>
+                    <li onclick="display('&**')"><a href="javascript:void(0);" name="&**">职场</a></li>
+                </ul></td>
+            </tr>
+        </table>
+    </section>
+    <section id="sec_screen" class="sec_screen">
+        <div class="sec_scr_a"><a href="#" name="!b@b&c&j&g&0%d"><img src="images/dm1.jpeg"/>
+            <p>鬼灭之刃</p><p>全26话</p><span>929万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b&c&j&g&0%c"><img src="images/dm1.jpeg"/>
+            <p>鬼灭之刃（中配）</p><p>全26话</p><span>785.4万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b&d&h&i%b"><img src="images/dm3.webp"/>
+            <p>Re：从零开始的异世界生活 第二季 后半</p><p>即将开播</p><span>785.5万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b&d&h&i%c"><img src="images/dm4.webp"/>
+            <p>Re：从零开始的异世界生活 第二季 前半</p><p>全13话</p><span>751.1万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b&c&k&j&l%b"><img src="images/dm5.webp"/>
+            <p>工作细胞 第二季</p><p>即将开播</p><span>734.9万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b&c&k&j&l%e"><img src="images/dm6.webp"/>
+            <p>工作细胞</p><p>全14话</p><span>710.2万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b&k&p&s&c%c"><img src="images/dm7.webp"/>
+            <p>辉夜大小姐想让我告白？～天才们的恋爱头脑战～</p><p>全12话</p><span>693.1万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b&d&i&j&u%b"><img src="images/dm8.webp"/>
+            <p>关于我转生变成史莱姆这档事 第二季</p><p>即将开播</p><span>657.5万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b&d&k&s%f"><img src="images/dm9.webp"/>
+            <p>埃罗芒阿老师</p><p>全12话</p><span>646.2万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b&n&k&l&c%f"><img src="images/dm10.webp"/>
+            <p>小林家的龙女仆</p><p>全14话</p><span>635.2万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b&d&p%f"><img src="images/dm11.webp"/>
+            <p>欢迎来到实力至上主义的教室</p><p>全12话</p><span>633.8万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b&k&p&s&c%d"><img src="images/dm12.webp"/>
+            <p>辉夜大小姐想让我告白～天才们的恋爱头脑战～</p><p>全12话</p><span>626.6万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b&d&i&j&u%e"><img src="images/dm13.webp"/>
+            <p>关于我转生变成史莱姆这档事</p><p>全29话</p><span>619.8万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b&d&h&x&m%c"><img src="images/dm14.webp"/>
+            <p>刀剑神域 爱丽丝篇 异界战争 -终章-</p><p>全12话</p><span>616.1万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b&d&s&i&p%e"><img src="images/dm15.webp"/>
+            <p>青春猪头少年不会梦到兔女郎学姐</p><p>全13话</p><span>601.3万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b&o&2&**&7%e"><img src="images/dm16.webp"/>
+            <p>紫罗兰永恒花园</p><p>全14话</p><span>600.6万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b&c&j&m&p%c"><img src="images/dm17.webp"/>
+            <p>某科学的超电磁炮T</p><p>全25话</p><span>578.2万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b&d&h&i%c"><img src="images/dm18.webp"/>
+            <p>Re：从零开始的异世界生活 新编集版</p><p>全13话</p><span>560.7万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!c@b&d%c"><img src="images/dm19.webp"/>
+            <p>紫罗兰永恒花园外传：永远与自动手记人偶</p><p>2020-01-10上映</p><span>557.6万追剧</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b&d&h&i%g"><img src="images/dm20.webp"/>
+            <p>Re：从零开始的异世界生活</p><p>全25话</p><span>542.1万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b%i&s&4&p&l"><img src="images/dm21.webp"/>
+            <p>冰菓</p><p>全22话</p><span>517.6万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b%d&d&h&m&x"><img src="images/dm22.webp"/>
+            <p>刀剑神域 爱丽丝篇 异界战争</p><p>全13话</p><span>510.6万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b%c&p&s&d"><img src="images/dm23.webp"/>
+            <p>我的青春恋爱物语果然有问题。完</p><p>全12话</p><span>510万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b%g&k&p&l"><img src="images/dm24.webp"/>
+            <p>在下坂本，有何贵干？</p><p>全13话</p><span>507.1万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b%e&d&i&j&6"><img src="images/dm25.webp"/>
+            <p>OVERLORD Ⅲ</p><p>全13话</p><span>489.1万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!c@b%d&d&i&j"><img src="images/dm26.webp"/>
+            <p> Re：从零开始的异世界生活 冰结之绊</p><p>全1话</p><span>488.5万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!c@b%d&d&i&h&l"><img src="images/dm27.webp"/>
+            <p>Re：从零开始的异世界生活 Memory Snow(..</p><p>全1话</p><span>487万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b%f&s&p&c&k"><img src="images/dm28.webp"/>
+            <p>徒然喜欢你</p><p>全12话</p><span>479.5万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b%h&d&i&j&x"><img src="images/dm29.webp"/>
+            <p>OVERLORD</p><p>全13话</p><span>479.2万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b%e&d&i&j&u"><img src="images/dm30.webp"/>
+            <p>OVERLORD Ⅱ</p><p>全13话</p><span>475万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b%c&d&h&i&n"><img src="images/dm31.webp"/>
+            <p>因为太怕痛就全点防御力了</p><p>全12话</p><span>471.4万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b%e&s&e&v"><img src="images/dm32.webp"/>
+            <p>Angels of Death</p><p>全16话</p><span>467.2万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!c@b%d&d&h&i&p"><img src="images/dm33.webp"/>
+            <p>青春猪头少年不会梦到怀梦美少女</p><p>全1话</p><span>461.2万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b%i&p&j&c&i"><img src="images/dm34.webp"/>
+            <p>某科学的超电磁炮</p><p>全24话</p><span>448.2万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@b%f&n&k&l&c"><img src="images/dm35.webp"/>
+            <p>干物妹！小埋R</p><p>全12话</p><span>446万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@b%i&t&3&7&s"><img src="images/dm36.webp"/>
+            <p>四月是你的谎言</p><p>全22话</p><span>445.8万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@b%c&d&j&p"><img src="images/dm37.webp"/>
+            <p>约战狂三外传</p><p>全2话</p><span>442.4万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@b%e&d&g&i&j"><img src="images/dm38.webp"/>
+            <p>刀剑神域 Alicization</p><p>全24话</p><span>437.7万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@b%i&c&j&i&v"><img src="images/dm39.webp"/>
+            <p>JOJO的奇妙冒险</p><p>全26话</p><span>435.4万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!c@b%d&i"><img src="images/dm40.webp"/>
+            <p>命运之夜——天之杯II ：迷失之蝶</p><p>2019-07-12上映</p><span>394.2万追剧</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!c@b%d&i&s"><img src="images/dm41.webp"/>
+            <p>游戏人生 零</p><p> 2019-07-19上映</p><span>312.5万追剧</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!c@b%g&s"><img src="images/dm42.webp"/>
+            <p>你的名字</p><p>全24话</p><span>2016-08-26上映</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!c@b%h&b&p&9"><img src="images/dm43.webp"/>
+            <p> Love Live! 学园偶像 电影</p><p>全1话</p><span>165.8万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!c@b%d&i"><img src="images/dm44.webp"/>
+            <p> 命运之夜——天之杯：恶兆之花</p><p>2019-01-11上映</p><span>127.1万追剧</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!c@b%i&b&j&i&u"><img src="images/dm45.webp"/>
+            <p>魔法少女小圆 剧场版 [新篇] 叛逆的物语</p><p>全1话</p><span>112.4万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!c@b%i&b&i&j&u"><img src="images/dm46.webp"/>
+            <p>魔法少女小圆 剧场版 [前篇] 起始的物语</p><p>全1话</p><span>104.4万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@c%b&b&g&j&k"><img src="images/dm47.webp"/>
+            <p>伍六七之玄武国篇</p><p>即将开播</p><span>727.4万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@c%d&g&i&j&c"><img src="images/dm48.webp"/>
+            <p>镇魂街 第二季</p><p>更新至第5话</p><span>650.2万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@c%d&g&m&i&j"><img src="images/dm49.webp"/>
+            <p>灵笼</p><p>更新至第012话</p><span>638.2万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@c%d&b&g&j&k"><img src="images/dm50.webp"/>
+            <p>伍六七之最强发型师</p><p>全10话</p><span>629.9万追番</span></a></div>
+        <div class="sec_scr_d"><a href="#" name="!b@c%c&b&j&i"><img src="images/dm51.webp"/>
+            <p>雾山五行</p><p>全3话</p><span>475.6万追番</span></a></div>
+        <div class="sec_scr_e"><a href="#" name="!b@c%i&n&&gi&o"><img src="images/dm52.webp"/>
+            <p>罗小黑战记</p><p>更新至28.5</p><span>444.2万追番</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@c%f&g&i&j&c"><img src="images/dm53.webp"/>
+            <p>一人之下 第二季</p><p>全24话</p><span>403.6万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@c%g&g&i&j&c"><img src="images/dm54.webp"/>
+            <p>镇魂街 第一季</p><p>全24话</p><span>386.2万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!c@c%d&n&&gi&o"><img src="images/dm55.webp"/>
+            <p>罗小黑战记</p><p>2019-09-07上映</p><span>341.3万追剧</span></a></div>
+        <div class="sec_scr_a"><a href="#" name="!b@c%c&c&j&k"><img src="images/dm56.webp"/>
+            <p>大理寺日志</p><p>全12话</p><span>325万追番</span></a></div>
+        <div class="sec_scr_b"><a href="#" name="!b@c%e&c&l&k"><img src="images/dm57.webp"/>
+            <p>非人哉</p><p>全48话</p><span>314.2万追番</span></a></div>
+        <div class="sec_scr_c"><a href="#" name="!b@c%c&d&g&z"><img src="images/dm58.webp"/>
+            <p>凡人修仙传</p><p>更新至第17话</p><span>294.7万追番</span></a></div>
+    </section>
+    <nav id="sec_page" class="sec_page">
+        <ul>
+            <li onclick="page('@')"><a href="#head">上一页</a></li>
+            <li onclick="page(1)"><a href="javascript:void(0);">1</a></li>
+            <li onclick="page(2)"><a href="javascript:void(0);">2</a></li>
+            <li onclick="page(3)"><a href="javascript:void(0);">3</a></li>
+            <li onclick="page(4)"><a href="javascript:void(0);">4</a></li>
+            <li onclick="page(5)"><a href="javascript:void(0);">5</a></li>
+            <li onclick="page(6)"><a href="javascript:void(0);">6</a></li>
+            <li onclick="page(7)"><a href="javascript:void(0);">7</a></li>
+            <li onclick="page(8)"><a href="javascript:void(0);">8</a></li>
+            <li onclick="page(9)"><a href="javascript:void(0);">9</a></li>
+            <li onclick="page(10)"><a href="javascript:void(0);">10</a></li>
+            <li onclick="page('*')"><a href="#head">下一页</a></li>
+        </ul>
+        <p>共 159 页/3165 个，跳至&nbsp;<input type="text" class="sec_pag_inp"/>&nbsp;页</p>
+    </nav>
+</section>
+<footer id="footer" class="footer">
+    <div class="dofa">
+        <p>这是我做的第一个网页 &nbsp;&nbsp;&copy;渡鸦12345</p>
+    </div>
+</footer>
+
+<script src="../jQuery/jquery.min.js" type="text/javascript"></script>
+<script src="lspCartoonjs.js" type="text/javascript"></script>
+</body>
+</html>
