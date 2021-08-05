@@ -1,0 +1,127 @@
+/******全局CSS******/
+*{ margin:0; padding:0; font-family:"华文细黑"; }
+input{ outline:none; }
+input:focus{ border:1px #0099FF solid; }
+ul,ol,li,dl,dt,dd{ list-style:none; }
+a{ text-decoration:none; color:#000; }
+.section:after,.sec_left_det:after,.sec_left_com>ul:after,.sec_left_com li:after,.sec_right_ser li:after{
+    content:''; display:block; clear:both; }
+/******全局CSS******/
+
+/******头部CSS******/
+.header{ position:relative; }
+/***导航栏***/
+.hea_nav{ width:100%; height:60px; background:#FF9999;  }
+.hea_nav img{ float:left; margin-top:6px; margin-left:65px; width:170px; height:50px; }
+.hea_nav ul,.hea_nav li{ float:left; margin-top:10px; }
+.hea_nav li{ font-size:16px; margin-left:30px;  }
+.hea_nav li a{ color:#FFFFFF; }
+/***导航栏***/
+/***登录/注册***/
+.hea_nav_fo{ width:70px; height:30px; margin:15px 15px; border-radius:8px; overflow:hidden; }
+.hea_nav_fo input{ width:105%; height:104%; background:#FFFFFF; color:#FF9999; font-size:16px;
+    border:1px #FFFFFF solid; }
+#hea_nav_fo1{ position:absolute; top:1px; right:50px; }
+#hea_nav_fo2{ position:absolute; top:1px; right:140px; }
+/***登录/注册****/
+/***搜索框***/
+#hea_form{ position:absolute; top:13px; right:270px; }
+#hea_form input{ width:350px; height:35px; border-radius:5px; font-size:15px; color:#000; text-indent:5px;
+    border:1px #CCCCCC solid; }
+/**悬浮时导航栏变化**/
+.hea_nav li a:hover{ text-decoration:underline; }
+#hea_nav_fo1:hover,#hea_nav_fo2:hover{ transform:scale(1.15); }
+/**悬浮时导航栏变化**/
+/******头部CSS******/
+
+/******主体CSS******/
+.section{ width:79%; margin:15px auto 0; box-sizing:border-box; }
+.sec_left{ width:68%; float:left; box-sizing:border-box; }
+.sec_right{ width:29%; float:right; box-sizing:border-box; }
+
+/***左边***/
+.sec_left_video{ width:100%; }
+.sec_left_video>video{ width:100%; height:430px; border:1px #999 solid; border-radius:10px;
+    background:#000; box-sizing:border-box; }
+.sec_left_video>video:focus{ outline: none;}
+
+.sec_left_det{ width:100%; padding:15px 0; border-top:1px #CCC solid; border-bottom:1px #CCC solid;
+    margin:13px 0; position:relative; }
+.sec_left_det img{ width:20%; height:180px; border-radius:5px; float:left; margin:0 15px 0 0; }
+.sec_left_det h4{ font-size:19px; color:#000; float:left; width:76%; line-height:35px; margin:3px 0 0; }
+.sec_left_det_a1{ position:absolute; top:18px; right:15px; color:#F99; background:#FFF; padding:3px 0; text-indent:8px;
+    border:1px #F99 solid; border-radius:5px; display:block; width:80px; }
+.sec_left_det_a2{ position:absolute; top:18px; right:120px; color:#999; width:90px; padding:3px 0;
+    background:#F7F7F7; border:1px #CCC solid; border-radius:5px; }
+.sec_left_det_a2>img{ width:20px; height:20px; margin:0 4px 0 10px; }
+.sec_left_det_a2>span{ font-size:14px; }
+.sec_left_det_a2>span,.sec_left_det_a2>img{ vertical-align:middle; }
+.sec_left_det>span{ font-size:10px; color:#CCC; float:left; width:76%; margin:7px 0; }
+.sec_left_det_p1,.sec_left_det_p2{ font-size:13px; width:76%; float:left;
+    text-overflow:ellipsis; overflow: hidden; white-space:nowrap; }
+.sec_left_det_p1{ height:20px; }
+.sec_left_det_p2{ height:80px; margin:5px 0 0; }
+
+.sec_left_com{ width:100%; padding:5px; box-sizing:border-box; }
+.sec_left_com>p{ font-size:20px; color:#000; font-weight:bold; text-align:left; line-height:30px; text-indent:1em; }
+.sec_left_com>p>span{ font-size:12px; color:#09F; float:right; margin:5px 0 0; }
+.sec_left_com>div{ position:relative; margin:15px 0 0; width:100%; }
+.sec_left_com>div>div{ width:50px; height:50px; border:1px #CCC solid; float:left; border-radius:50%;
+    background:#F99 url(images/bg.jpg) 0 0 no-repeat; background-size:145%; margin:5px 20px 0 10px; }
+.sec_left_com>div>textarea{ width:77%; height:60px; border:1px #CCC solid; border-radius:5px; margin:0; text-indent:9px; }
+.sec_left_com>div>textarea:focus{ border:1px #0099FF solid; outline:none; }
+.sec_left_com>div>textarea:hover{ border:1px #0099FF solid; }
+.sec_left_com>div>a{ position:absolute; top:0; right:0; border:1px #0099FF dashed; margin:0;
+    background:#0099FF; padding:11px 17px; border-radius:8px; }
+.sec_left_com>div>a>p{ font-size:14px; color:#FFF;  }
+.sec_left_com>ul{ width:100%; }
+.sec_left_com li{ width:100%; float:left; margin:15px 0 0; }
+.sec_left_com li>div{ width:12%; height:60px; float:left; }
+.sec_left_com li>div>div{ width:50px; height:50px; border-radius:50%;
+    background:#F99 url(images/bg.jpg) 0 0 no-repeat; background-size:145%; margin:15px 20px 0 10px; }
+.sec_left_com li>span{ font-size:14px; color:#F99; float:left; padding:15px 77% 10px 0; border-top:1px #CCC solid; }
+.sec_left_com li>p{ float:left; width:87%; }
+/***左边***/
+/***右边***/
+.sec_right_pos,.sec_right_oth{ width:100%; background:#F4F4F4; border-radius:5px; margin:0 0 20px; }
+.sec_right_pos>p,.sec_right_oth>p{ font-size:17px; color:#000; text-align:left; text-indent:15px;
+    line-height:38px; position:relative; }
+.sec_right_pos>p>img{ width:20px; height:20px; position:absolute; top:9px; left:55px; }
+.sec_right_pos>p>span{ font-size:10px; color:#09F; float:right; margin:0 39px 0; position:relative; }
+.sec_right_pos>p>span>img{ width:15px; height:15px; position:absolute; top:10px; right:-20px; }
+.sec_right_pos>ul,.sec_right_oth>ul{ width:100%; padding:0 10px 10px; box-sizing:border-box; }
+.sec_right_pos li,.sec_right_oth li{ font-size:11px; color:#000; padding:5px 0; margin:0 0 5px; text-indent:1.5em;
+    text-overflow:ellipsis; overflow: hidden; white-space:nowrap; }
+.sec_right_pos li:hover,.sec_right_oth li:hover{ background:#FFF; }
+/*播放第几集，就设置这个样式，js*/
+.sec_right_pos li:nth-of-type(1){ background:#FFF; color:#09F; }
+.sec_right_pos li:nth-of-type(1) a{ background:url(images/bf.png) 0 0 no-repeat; background-size:10px;
+    padding:0 18px; }
+/*播放第几集，就设置这个样式,js*/
+.sec_right_ser{ width:100%; margin:-10px 0 0; }
+.sec_right_ser>p{ font-size:16px; color:#000; text-align:left; line-height:30px; margin:0 0 7px; }
+.sec_right_ser  li{ width:100%; position:relative; margin:0 0 20px; }
+.sec_right_ser  li img{ width:50%; height:90px; float:left; border-radius:5px; margin:0 10px 0 0; }
+.sec_right_ser  li h5{ font-size:15px; float:left; font-weight:normal; }
+.sec_right_ser  li span{ font-size:13px; color:#999; position:absolute; bottom:25px; left:155px; }
+.sec_right_ser  li p{ font-size:10px; color:#CCC; position:absolute;bottom:5px; left:155px; }
+/***右边***/
+/******主体CSS******/
+
+/******页脚CSS******/
+.dofa{ width:100%; height:25px; border-top:2px #FF9999 solid; margin-top:20px; }
+.dofa p{ text-align:center; color:#FF9999;  }
+/******页脚CSS******/
+
+/******固定定位CSS******/
+.backtrack{ width:55px; height:55px; position:fixed; bottom:50px; right:70px; border-radius:10px; }
+.backtrack img{ width:100%; height:100%; }
+/******固定定位CSS******/
+
+/******js应用CSS******/
+
+
+
+
+
+/******js应用CSS******/

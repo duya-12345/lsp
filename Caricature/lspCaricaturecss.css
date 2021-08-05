@@ -1,0 +1,85 @@
+/******全局CSS******/
+*{ margin:0; padding:0; font-family:"华文细黑"; }
+input{ outline:none; }
+input:focus{ border:2px #FF9999 solid; }
+ul,ol,li,dl,dt,dd{ list-style:none; }
+a{ text-decoration:none; color:#000; }
+.sec_screen:after{ content:''; display:block; clear:both; }
+/******全局CSS******/
+
+/******头部CSS******/
+.header{ position:relative; }
+/***导航栏***/
+.hea_nav{ width:100%; height:60px; background:#FF9999;  }
+.hea_nav img{ float:left; margin-top:6px; margin-left:65px; width:170px; height:50px; }
+.hea_nav ul,li{ float:left; margin-top:10px;  }
+.hea_nav li{ font-size:16px; margin-left:30px;  }
+.hea_nav li a{ color:#FFFFFF; }
+/***导航栏***/
+/***登录/注册***/
+.hea_nav_fo{ width:70px; height:30px; margin:15px 15px; border-radius:8px; overflow:hidden; }
+.hea_nav_fo input{ width:105%; height:104%; background:#FFFFFF; color:#FF9999; font-size:16px;
+    border:1px #FFFFFF solid; }
+#hea_nav_fo1{ position:absolute; top:1px; right:50px; }
+#hea_nav_fo2{ position:absolute; top:1px; right:140px; }
+/***登录/注册****/
+/***搜索框***/
+.hea_form{ position:absolute; top:13px; right:270px; }
+.hea_form input{ width:350px; height:35px; border-radius:5px; font-size:15px; color:#000; text-indent:5px;
+    border:1px #CCCCCC solid; }
+/**悬浮时导航栏变化**/
+.hea_nav li a:hover{ text-decoration:underline; }
+#hea_nav_fo1:hover,#hea_nav_fo2:hover{ transform:scale(1.15); }
+/**悬浮时导航栏变化**/
+/******头部CSS******/
+
+/******主体CSS******/
+.section{ margin:0 auto; padding:0; width:90%; }
+
+/**筛选**/
+.sec_filtrate{ width:100%; margin-top:15px; }
+.sec_fil_table td{ vertical-align:middle; font-size:10px; }
+.sec_fil_table ul li{ padding:2px 22px; margin:4px 7px; border-radius:7px; }
+.sec_fil_table tr:nth-of-type(1) th{ width:80px; text-align:left; font-size:22px; font-weight:normal; }
+.sec_fil_table tr:nth-of-type(1) th p{ margin-top:-30px; }
+.sec_fil_table tr td:nth-of-type(1){ width:40px; font-size:13px; color:#999; vertical-align:top; }
+.sec_fil_table tr td:nth-of-type(1) p{ margin-top:5px; }
+.sec_fil_table ul li:nth-of-type(1){ background:#0099FF; }
+.sec_fil_table ul li:nth-of-type(1) a{ color:#FFFFFF; }
+/**具体漫画**/
+.sec_screen{ width:100%; margin-top:15px; box-sizing:border-box; }
+.sec_screen>div{ width:170px; height:270px; float:left; margin:0 9px 25px; }
+.sec_screen>div img{ width:100%; height:220px; border-radius:5px; }
+.sec_screen>div p{ font-size:14px; color:#000; text-align:left; margin-top:2px; }
+.sec_screen>div span{ font-size:10px; color:#999; text-align:left; margin-top:3px; }
+.sec_screen>div p:hover{ color:#0099FF; }
+/******主体CSS******/
+
+/******页脚CSS******/
+.dofa{ width:100%; height:50px; margin-top:20px; border-top:2px #FF9999 solid; }
+.dofa p{ text-align:center; color:#FF9999;  }
+/******页脚CSS******/
+
+/******固定定位CSS******/
+.backtrack{ width:55px; height:55px; position:fixed; bottom:50px; right:100px; border-radius:5px;
+    overflow:hidden; }
+.backtrack img{ width:100%; height:100%; position:absolute; top:-2px; left:-1px; }
+@keyframes spread{ 100%{} }
+/*固定筛选*/
+.sec_filtrate2{ width:100%; position:fixed; top:0; background:#FFFFFF; box-shadow: 0 1px 5px #CCCCCC;
+    display:none; }
+.sec_fil_table2 td{ vertical-align:middle; font-size:10px; }
+.sec_fil_table2 ul li{ padding:2px 22px; margin:4px 7px; border-radius:6px; }
+.sec_fil_table2 tr:nth-of-type(1) th{ width:80px; text-align:left; font-size:22px; font-weight:normal; }
+.sec_fil_table2 tr:nth-of-type(1) th p{ margin-top:-30px; }
+.sec_fil_table2 tr td:nth-of-type(1){ width:40px; font-size:13px; color:#999; vertical-align:top; }
+.sec_fil_table2 tr td:nth-of-type(1) p{ margin-top:5px; }
+.sec_fil_table2 ul li:nth-of-type(1){ background:#0099FF; }
+.sec_fil_table2 ul li:nth-of-type(1) a{ color:#FFFFFF; }
+
+/******固定定位CSS******/
+
+/******js应用CSS******/
+.bg{ height:800px; background:url(images/Ax.png) 380px 200px no-repeat; }
+
+/******js应用CSS******/
